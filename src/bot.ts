@@ -1,8 +1,10 @@
-import {Client,GatewayIntentBits} from 'discord.js';
+import {Client} from 'discord.js';
 import {config} from 'dotenv'
+//import {} from './config.json'
+
 
 config();
-const client = new Client({intents:[GatewayIntentBits.Guilds]});
+const client = new Client({intents:[129023]});
 
 client.on('ready',()=>{
     console.log(`Logged in as ${client.user?.tag}! `);
